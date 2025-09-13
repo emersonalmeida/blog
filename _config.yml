@@ -2,6 +2,6 @@ title: "Meu Blog"
 description: "Um blog feito com GitHub Pages e Markdown"
 theme: minima
 
-# IMPORTANTE:
-baseurl: "/blog"   # o nome do repositório
+# URLs
 url: "https://emersonalmeida.github.io"
+baseurl: "/blog"   # corresponde ao nome do repositório

@@ -4,4 +4,8 @@ theme: minima
 
 # URLs
 url: "https://emersonalmeida.github.io"
-baseurl: "/blog"   # corresponde ao nome do repositório
+baseurl: "/blog"
+
+# Permalink curto (sem data, sem categoria)
+permalink: /:title:output_ext
+

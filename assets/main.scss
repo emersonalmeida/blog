@@ -1,22 +1,128 @@
-// assets/main.scss
 ---
+# Importa o tema Minima antes das customizações
 ---
 
 @import "minima";
 
+/* ===========================
+   🌐 Base e Tipografia
+   =========================== */
 body {
-  background-color: #131313;
-	font-family: monospace;
+  font-family: "Roboto-Mono", "monospace", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  background-color: #fdfdfd;
+  color: #333;
 }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: #222;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   🔗 Links e Botões
+   =========================== */
 a {
-  color: #f0f0f0;
+  color: #0077cc;
+  text-decoration: none;
 }
 
-h1{}
-h2{}
-h3{}
-h4{}
-h5{}
-h6{}
+a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
 
+button, .btn {
+  background: #0077cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background: #005fa3;
+}
+
+/* ===========================
+   📝 Posts
+   =========================== */
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   📋 Listas e Tabelas
+   =========================== */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+table th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+/* ===========================
+   💻 Código e Blocos
+   =========================== */
+code {
+  background: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+pre {
+  background: #1e1e1e;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   🌙 Dark Mode (via body.dark)
+   =========================== */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark a {
+  color: #4da3ff;
+}
+
+body.dark pre {
+  background: #2d2d2d;
+}
 

@@ -2,10 +2,12 @@ title: "Meu Blog"
 description: "Um blog feito com GitHub Pages e Markdown"
 theme: minima
 
-# URLs
 url: "https://emersonalmeida.github.io"
 baseurl: "/blog"
 
 # Permalink curto (sem data, sem categoria)
 permalink: /:title:output_ext
+
+# Força exibir posts futuros também
+future: true
 

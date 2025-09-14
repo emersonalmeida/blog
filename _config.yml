@@ -1,7 +1,5 @@
 title: "ea/blog"
-description: "feito com gitHub e markdown"
 theme: minima
-
 url: "https://emersonalmeida.github.io"
 baseurl: "/blog"
 
@@ -22,9 +20,9 @@ header_pages:
   - categorias.md
 
 # Redes sociais no rodapé (tema minima)
-minima:
-  social_links:
-    github: emersonalmeida
+#minima:
+#  social_links:
+#    github: emersonalmeida
     # linkedin: seu-perfil
     # twitter: seu-usuario
 

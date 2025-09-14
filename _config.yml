@@ -1,28 +1,69 @@
+# -------------------------------------
+# 🌐 Configurações básicas do site
+# -------------------------------------
 title: "ea/blog"
-theme: minima
-url: "https://emersonalmeida.github.io"
-baseurl: "/blog"
+description: "Blog pessoal sobre tecnologia, design e cripto."
+url: "https://emersonalmeida.github.io"   # domínio principal
+baseurl: "/blog"                          # subpasta do projeto (em branco se usar domínio próprio)
+lang: pt-BR                               # idioma do site
 
-# Permalink curto (sem data, sem categoria)
+# -------------------------------------
+# 🔗 Estrutura de links
+# -------------------------------------
+# URLs mais limpas (sem data, sem categoria)
 permalink: /:title:output_ext
 
-# Idioma e plugins de SEO
-#lang: pt-BR
-#plugins:
-#  - jekyll-feed
-#  - jekyll-sitemap
-#  - jekyll-seo-tag
-
-# Links no menu do cabeçalho
+# -------------------------------------
+# 📄 Páginas fixas no cabeçalho
+# -------------------------------------
 header_pages:
   - sobre.md
   - contato.md
   - categorias.md
+  # - tags.md   # (quando você criar a página de tags)
 
-# Redes sociais no rodapé (tema minima)
-#minima:
-#  social_links:
-#    github: emersonalmeida
-    # linkedin: seu-perfil
-    # twitter: seu-usuario
+# -------------------------------------
+# 🎨 Tema e estilo
+# -------------------------------------
+theme: minima
+
+# Ativar suporte a SCSS (assets/main.scss já existe)
+sass:
+  style: compressed   # gera CSS minificado
+
+# -------------------------------------
+# 🔍 Plugins suportados pelo GitHub Pages
+# -------------------------------------
+plugins:
+  - jekyll-feed       # gera feed.xml (RSS/Atom)
+  - jekyll-sitemap    # gera sitemap.xml
+  - jekyll-seo-tag    # SEO, Open Graph, Twitter Cards
+
+# -------------------------------------
+# 📢 Redes sociais (suportadas pelo tema minima)
+# -------------------------------------
+minima:
+  social_links:
+    github: emersonalmeida
+    linkedin: emersonalmeida
+    twitter: emersonalmeida
+    mastodon: https://mastodon.social/@emersonalmeida
+
+# -------------------------------------
+# ⚡ Extras opcionais
+# -------------------------------------
+
+# Paginação (caso queira dividir lista de posts em páginas)
+paginate: 10
+paginate_path: "/page:num/"
+
+# Markdown config
+markdown: kramdown
+kramdown:
+  input: GFM           # suporta GitHub Flavored Markdown
+  math_engine: mathjax # ativa fórmulas LaTeX
+  syntax_highlighter: rouge
+
+# Google Analytics (quando você tiver o ID)
+google_analytics: "UA-XXXXXXX-X"
 

@@ -9,11 +9,11 @@ baseurl: "/blog"
 permalink: /:title:output_ext
 
 # Idioma e plugins de SEO
-lang: pt-BR
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+#lang: pt-BR
+#plugins:
+#  - jekyll-feed
+#  - jekyll-sitemap
+#  - jekyll-seo-tag
 
 # Links no menu do cabeçalho
 header_pages:

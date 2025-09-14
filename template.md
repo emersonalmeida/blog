@@ -1,7 +1,7 @@
 ---
 layout: post        # "post" para artigos em _posts/ | "page" para páginas fixas
 title: "Título do Conteúdo"
-date: YYYY-MM-DD HH:MM:SS +0000
+date: 2025-09-14 01:01:01 +0000
 categories: [categoria1, categoria2]    # usado na página /categorias/
 tags: [tag1, tag2, tag3]                 # útil para SEO ou plugins
 author: "Seu Nome"
